@@ -1,0 +1,196 @@
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(to right, #974C38, #181E41);
+    flex-direction: column;
+    overflow-x: hidden;
+    
+}
+
+.header {
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+}
+
+.items{ 
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.logo{ 
+    display: flex;
+    color: #6C5DD3;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+input{ 
+    padding: 8px 20px;
+    border-radius: 24px;
+    background-color: transparent;
+    border: solid 2px white;
+    opacity: 0.7;
+
+}
+
+input::placeholder{ 
+    color: white;
+}
+
+.middle-items{
+    display: flex; 
+    gap: 40px;
+    align-items: center;
+}
+
+.middle-items a svg {
+    margin-left: 10px;
+}
+
+
+.middle-items a, .end-items a{ 
+    display: flex;
+    text-decoration: none;
+    color: white;
+
+}
+
+.end-items{ 
+    display: flex;
+    margin: 14px 0 0 20px;
+    gap: 20px;
+}
+
+.end-items a img{ 
+    margin-top: -10px;
+} 
+
+.wallet-box{ 
+    display: flex;
+    gap: 20px;
+}
+
+.wallet-box a{ 
+    padding: 10px 30px;
+    display: flex;
+    border: solid 1px white ;
+    border-radius: 10px;
+    margin-top: -10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.wallet-box svg{ 
+    margin-top: -10px;
+    
+}
+
+
+main {
+    display: flex;
+    margin: 40px 0 100px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.account-section{ 
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.account-section img { 
+    border-radius: 50%;
+}
+
+.account-section h4{ 
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.account-section span{ 
+    display: flex;
+    margin-left: 10px;
+    color: white;
+    border: solid 1px #6C5DD3;
+    padding: 15px 40px;
+    background-color: #6C5DD3;
+    border-radius: 26px;
+    cursor: pointer;
+}
+
+
+
+#button-section{ 
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+#button-section button{ 
+    padding: 15px 50px;
+    color: white;
+    background-color: #6C5DD3;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.footer {
+    display: flex;
+    background-color: transparent; 
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+    gap: 230px;
+    height: 300px;
+}
+
+.footer-logo, .about, .company, .contact{ 
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    align-items: flex-start;
+    text-align: start;
+    gap: 30px;
+}
+
+.footer-logo span, .about span, .company span, .contact span{ 
+    font-size: 24px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-logo span{ 
+    color: #6C5DD3;
+}
+
+.footer-logo a, .about a, .company a, .contact a{
+    text-decoration: none;
+    color: white;
+    opacity: 0.7;
+} 
+
+#platforms{ 
+    display: flex;
+    gap: 15px;
+}
