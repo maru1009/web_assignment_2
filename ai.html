@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .faq-container {
+      width: 400px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .faq-question {
+      padding: 15px;
+      border-bottom: 1px solid #ddd;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="faq-container">
+  <div class="faq-question" onclick="toggleFAQ('faq1')">What is Lorem Ipsum?</div>
+  <div class="faq-answer" id="faq1">Lorem Ipsum is simply dummy text of the printing...</div>
+
+  <div class="faq-question" onclick="toggleFAQ('faq2')">Why do we use it?</div>
+  <div class="faq-answer" id="faq2">It is a long established fact that a reader will be distracted by...</div>
+
+  <div class="faq-question" onclick="toggleFAQ('faq3')">Is it free?</div>
+  <div class="faq-answer" id="faq3">Yes, Lorem Ipsum is free to use.</div>
+</div>
+
+<script>
+  function toggleFAQ(id) {
+    var answer = document.getElementById(id);
+    answer.style.display = (answer.style.display === 'none' || answer.style.display === '') ? 'block' : 'none';
+  }
+</script>
+
+</body>
+</html>
