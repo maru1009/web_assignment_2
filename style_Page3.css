@@ -5,7 +5,6 @@ body {
     background: linear-gradient(to right, #974C38, #181E41);
     flex-direction: column;
     overflow-x: hidden;
-    
 }
 
 .header {
@@ -42,7 +41,12 @@ input{
 }
 
 input::placeholder{ 
-    color: white;
+    color: #ffffff;
+    font-family: "SF Pro Display-Regular", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.42px;
+
 }
 
 .middle-items{
@@ -59,8 +63,11 @@ input::placeholder{
 .middle-items a, .end-items a{ 
     display: flex;
     text-decoration: none;
-    color: white;
-
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
 }
 
 .end-items{ 
@@ -95,17 +102,94 @@ input::placeholder{
 }
 
 
+
+
+
+
+
+
 main {
     display: flex;
     margin: 40px 0 100px;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
+
+.video-section{ 
+    display: flex;
+    flex-direction: column;
+}
+
+.video-text{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.video-text span{ 
+    display: flex;
+    color: #ffffff;
+    font-family: "SF Pro Display-Semibold", Helvetica;
+    font-size: 19.7px;
+    font-weight: 400;
+}
+
+.like-and-share{ 
+    display: flex;
+    color: white;
+    gap: 40px;
+    flex-direction: row;
+    font-size: 16px;
+}
+
+
+.like{ 
+    display: flex;
+    gap: 10px;
+}
+
+.like svg{ 
+    margin-top: -4px;
+    cursor: pointer;
+}
+.like span{ 
+    color: #6c5dd3;
+    font-family: "SF Pro Display-Medium", Helvetica;
+    font-size: 19.8px;
+    font-weight: 500;
+    margin-top: -2px;
+}
+.like a{ 
+    color: #ffffff80;
+    font-family: "SF Pro Display-Regular", Helvetica;
+    font-size: 17.3px;
+    font-weight: 400;
+}
+
+
+.share{ 
+    display: flex;
+    gap: 10px;
+}
+
+.share svg{ 
+    margin: -4px -2px 0 0 ;
+    cursor: pointer;
+}
+
+.share span{ 
+    color: #ffffff80;
+    font-family: "SF Pro Display-Regular", Helvetica;
+    font-size: 17.3px;
+    font-weight: 400;
+    margin-top: -2px;
+}
+
 .account-section{ 
     display: flex;
-    margin-top: 20px;
+    margin: 20px 730px 0 0;
     align-items: center;
     gap: 10px;
     margin-bottom: 20px;
@@ -126,12 +210,172 @@ main {
     display: flex;
     margin-left: 10px;
     color: white;
-    border: solid 1px #6C5DD3;
+    border: solid 1px  linear-gradient(to left, #B258FE, #7D2CEB);;
     padding: 15px 40px;
-    background-color: #6C5DD3;
+    background: linear-gradient(to left, #B258FE, #7D2CEB);
     border-radius: 26px;
     cursor: pointer;
+    font-family: "SF Pro Display-Semibold", Helvetica;
+    font-size: 13.6px;
+    font-weight: 400;
 }
+
+.comment-section{ 
+    display: flex;
+    flex-direction: row;
+    height: 520px;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+
+.comment-box1{ 
+    display: flex;
+    background: #ffffff1a;
+    border-radius: 12px;
+    width: 500px;
+    flex-direction: column;
+    align-items: flex-start;    
+}
+.comment-box1 h3{ 
+    display: flex;
+    justify-content: flex-start;
+    margin: 30px 0 35px 40px;
+    color: #ffffff;
+    font-family: "SF Pro Display-Semibold", Helvetica;
+    font-size: 21.8px;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+.small-box{ 
+    display: flex;
+    background-color: #ffffff1a;
+    width: 400px;
+    margin: 0 0 20px 40px;
+    height: 90px;
+    border-radius: 14px;
+}
+
+.small-box img {
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+}
+
+.comment-text h5{ 
+    display: flex;
+    margin: 15px 0 10px 5px;
+    font-size: 18px;
+    color: white;
+}
+
+.comment-text a{ 
+    text-decoration: none;
+    color: #B1AAB1;
+    margin-left: 5px;
+}
+
+.comment-time{ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: end;
+    margin-left: 100px;
+}
+
+.comment-time span{ 
+    color: #ABA7B2;
+}
+
+.comment-notification{ 
+    color: white;
+    padding: 6px;
+    background: linear-gradient(to left, #B258FE, #7D2CEB);
+    border-radius: 24px;
+    margin: -50px 0 0 185px;
+    cursor: pointer;
+}
+
+.comment-arrow img{ 
+    border-radius: 50%;
+    margin: -100px 0 33px 400px;
+    cursor: pointer;
+}
+
+
+
+
+.comment-box2{
+    display: flex; 
+    background-color: #ffffff1a;
+    border-radius: 12px;
+    width: 500px;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.comment-box2 h3{ 
+    display: flex;
+    justify-content: flex-start;
+    margin: 30px 0 30px 40px;
+    color: #ffffff;
+    font-family: "SF Pro Display-Semibold", Helvetica;
+    font-size: 21.8px;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+.top-chats{ 
+    display: flex;
+
+    width: 400px;
+    margin: 0 0 20px 40px;
+    border-radius: 14px;
+    gap: 10px;
+}
+
+.top-chats img{ 
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+}
+
+.top-chats span{ 
+    color: #ffffff;
+    font-family: "SF Pro Display-Regular", Helvetica;
+    font-size: 15.3px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 19.7px;
+}
+
+.comment-notification2{ 
+    color: white;
+    padding: 7px;
+    background: linear-gradient(to left, #B258FE, #7D2CEB);
+    border-radius: 24px;
+    margin: -60px 0 0 170px;
+    cursor: pointer;
+    width: 150px;
+}
+
+.commenting input{ 
+    display: flex;
+    width: 360px;
+    height: 40px;
+    background-color: #686375;
+    margin: -40px 0 10px 50px;
+    border-radius: 28px;
+    border-color: #686375 ;
+}
+
+.commenting img { 
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
 
 
 
@@ -144,11 +388,94 @@ main {
 #button-section button{ 
     padding: 15px 50px;
     color: white;
-    background-color: #6C5DD3;
+    background: linear-gradient(to left, #B258FE, #7D2CEB);
     border-radius: 12px;
     border: none;
+    font-family: "SF Pro Display-Semibold", Helvetica;
+    font-size: 22.5px;
+    font-weight: 400;
     cursor: pointer;
 }
+
+
+.back-button button{ 
+    padding: 15px 50px;
+    color: white;
+    background: linear-gradient(to left, #B258FE, #7D2CEB);
+    border-radius: 65px;
+    border: none;
+    font-family: "SF Pro Display-Semibold", Helvetica;
+    font-size: 22.5px;
+    font-weight: 400;
+    cursor: pointer;
+    margin: 0 200px 0 -570px 
+}
+.back-button button svg{ 
+    margin: 0 20px -4px 0 ;
+}
+
+
+
+
+
+.live-section { 
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-left: 70px;
+
+}
+
+.live-section-box{ 
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    background-color: transparent;
+}
+
+.live-timer span{ 
+    margin: 0 0 0px 145px;
+    color: #ffffffcc;
+    font-family: "SF Pro Display-Medium", Helvetica;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.live-picture img{ 
+    margin: 10px 0 0;
+}
+
+.account-section-live span{ 
+    color: #ffffff80;
+    font-family: "Poppins-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+.account-section-live{ 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.account-section-live img { 
+    border-radius: 50%;
+}
+
+.account-section-live h4{ 
+    color: #ffffff;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+
+
+
 
 
 
@@ -175,9 +502,10 @@ main {
 }
 
 .footer-logo span, .about span, .company span, .contact span{ 
-    font-size: 24px;
+    color: #ffffff;
+    font-family: "Poppins-Bold", Helvetica;
+    font-size: 20px;
     font-weight: 700;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .footer-logo span{ 
@@ -185,9 +513,11 @@ main {
 }
 
 .footer-logo a, .about a, .company a, .contact a{
+    color: #ffffff80;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 15px;
+    font-weight: 500;
     text-decoration: none;
-    color: white;
-    opacity: 0.7;
 } 
 
 #platforms{ 
